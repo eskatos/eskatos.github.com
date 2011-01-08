@@ -35,6 +35,11 @@ body.eskatos {
   color: white;
 }
 
+#header img {
+  float: left;
+  margin: 5px 5px 0 8px;
+}
+
 #header h1 {
   margin: 0;
   padding-left: 16px;
