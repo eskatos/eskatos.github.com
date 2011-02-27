@@ -18,9 +18,7 @@ a {
   position: relative;
   left: 50%;
   width: 920px;
-  margin-top: 20px;
-  margin-left: -460px;
-  margin-bottom: 40px;
+  margin: 30px 0 40px -460px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
