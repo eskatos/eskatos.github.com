@@ -1,0 +1,107 @@
+ 
+html,body {
+  margin: 0; padding: 0;
+  font-family: Verdana, Helvetica, sans;
+  font-size: 14px;
+  color: #031830;
+}
+
+a {
+  color: #3E79AC;
+}
+
+#outbox {
+  border: 1px solid lightgray;
+  padding: 10px;
+  position: relative;
+  left: 50%;
+  width: 920px;
+  margin-top: 20px;
+  margin-left: -460px;
+}
+
+#header {
+  font-size: 1m;
+}
+
+#header-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+#title {
+  margin: 40px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #3E79AC;
+}
+
+h1.theme {
+  margin: 20px 10px 0 10px;
+  padding: 0;
+  font-size: 1.7em;
+  color: #3E79AC;
+}
+
+div.theme {
+  margin: 0 10px 10px 10px;
+  padding: 10px 20px;
+  border-top: 2px solid #3E79AC;
+  border-bottom: 2px solid #3E79AC;
+  background-color: #F8FBFF;
+}
+
+div.theme-headline {
+  margin: 10px 10px 20px 10px;
+  padding: 0 10px;
+  border-left: 1px solid #3E79AC;
+  text-align: justify;
+}
+
+div.theme-item {
+  position: relative;
+  clear: both;
+  margin: 10px 0 0 0;
+  padding: 10px 0 20px 0;
+  border-top: 1px solid #3E79AC;  
+}
+
+div.theme-item p.meta {
+  float: left;
+  margin: 0; padding: 0;
+  width: 180px;
+}
+div.theme-item p.meta span.date {
+  display: block;
+  font-size: 0.8em;
+}
+div.theme-item p.meta span.title {
+  display: block;
+  font-weight: bold;
+}
+div.theme-item p.meta span.company {
+  display: block;
+  font-size: 0.8em;
+}
+div.theme-item p.text {
+  margin: 0 0 0 200px; padding: 0;
+  font-size: 1.1em;
+}
+
+
+div.geeky {}
+div.geeky-button {
+  text-align: right;
+  color: #3E79AC;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+div.geeky-content {
+  margin: 0 10px 0 200px;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #3E79AC;
+  font-size: 0.9em;
+}
