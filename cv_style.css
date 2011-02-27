@@ -21,7 +21,7 @@ a {
 }
 
 #header {
-  font-size: 1m;
+  line-height: 1.4em;
 }
 
 #header-right {
@@ -73,6 +73,7 @@ div.theme-item p.meta {
   float: left;
   margin: 0; padding: 0;
   width: 180px;
+  line-height: 1.4em;
 }
 div.theme-item p.meta span.date {
   display: block;
@@ -85,14 +86,17 @@ div.theme-item p.meta span.title {
 div.theme-item p.meta span.company {
   display: block;
   font-size: 0.8em;
+  margin-bottom: 20px;
 }
 div.theme-item p.text {
-  margin: 0 0 0 200px; padding: 0;
+  margin: 0 0 5px 200px; padding: 0;
   font-size: 1.1em;
 }
 
 
-div.geeky {}
+div.geeky {
+  text-align: right;
+}
 div.geeky-button {
   text-align: right;
   color: #3E79AC;
@@ -100,8 +104,10 @@ div.geeky-button {
   font-size: 0.8em;
 }
 div.geeky-content {
-  margin: 0 10px 0 200px;
+  margin: 0 10px 0 220px;
   padding: 0 10px 0 0;
   border-right: 1px solid #3E79AC;
   font-size: 0.9em;
+  text-align: left;
+  width: 610px;
 }
