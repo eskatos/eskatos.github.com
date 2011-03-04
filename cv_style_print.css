@@ -26,3 +26,7 @@ div.theme-item { border-color: lightgray; }
 
 /* hide not printed content */
 div.geeky { display: none; }
+
+.pagebreak {
+  page-break-before: always;
+}
