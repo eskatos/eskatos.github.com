@@ -27,7 +27,7 @@
 <body>
 <div id="outbox">
 
-<div id="header">
+<!-- header --><div id="header">
 <div id="header-left">
 Paul Merlin - <a href="mailto:paul@nosphere.org">paul@nosphere.org</a><br/>
 <a href="http://eskatos.github.com">eskatos.github.com</a><br/>
@@ -40,12 +40,11 @@ Paul Merlin - <a href="mailto:paul@nosphere.org">paul@nosphere.org</a><br/>
 </div>
 </div> <!-- /header -->
 
-<div id="title">
-langages, patterns d'implémentation et d'architecture, sécurité, outillage
-</div>
+
+<div id="title">langages, patterns d'implémentation et d'architecture, sécurité, outillage</div>
 
 
-<h1 class="theme">Ingénierie logicielle</h1>
+<!-- dev --><h1 class="theme">Ingénierie logicielle</h1>
 <div class="theme">
 
 <div class="theme-headline">
@@ -56,24 +55,59 @@ langages, patterns d'implémentation et d'architecture, sécurité, outillage
 
 
 <div class="theme-item">
-<p class="meta">
-<span class="date">Depuis Janvier 2007</span>
-<span class="title">Architecte Logiciel</span>
-<span class="company">Netheos</span>
-</p>
-<p class="text">Successivement développeur principal, chef de projet puis architecte logiciel sur la ligne produit eKeynox de Netheos.</p>
-<p class="text">Participation aux projets de recherche et missions du bureau d'étude.</p>
-<div class="geeky">
-  <div class="geeky-content">
-    <p>Configuration et exploitation de l'infrastructure de développement. Intégration Continue avec Hudson/Jenkins, gestion des sources avec git & gitolite, gestion des binaires avec Nexus, analyse statique de code avec Sonar, suivit de projet avec Redmine.</p>
-    <p>Automatisation de la chaine de production, du code aux images DVD du produit avec Maven, Ruby et sh.</p>
-    <p>En tant que développeur principal, rapport direct à la direction de la société</p>
-    <p>En tant qu'architecte, rapport direct au directeur technique, collaboration avec les chefs de projets, les développeurs et le support.</p>
-    <p>...</p>
-    <p>Obfuscation en cascade de librairies Java versionnées.</p>
-  </div>
+	<p class="meta">
+		<span class="date">Depuis Janvier 2007</span>
+		<span class="title">Architecte Logiciel</span>
+		<span class="company">Netheos</span>
+	</p>
+	<p class="text">Successivement développeur principal, chef de projet puis architecte logiciel sur la ligne produit eKeynox de Netheos.</p>
+	<p class="text">Architecte sécurité logicielle au sein du laboratoire de sécurité.</p>
+	<div class="geeky">
+        <div class="geeky-content">
+            <p><strong>eKeynox</strong></p>
+            <p>Produit déployé et utilisé par plusieurs entreprise du CAC 40 (énergie, banque ...)</p>
+			<p>En tant que développeur principal, rapport direct à la direction de la société</p>
+            <p>En tant qu'architecte, rapport direct au directeur technique, collaboration avec les chefs de projets, les développeurs et le support.</p>
+            <p>Architecture et implémentation d'un TokenManagementSystem multi-serveurs en JavaEE 5 puis 6 déployé avec Glassfish 2 puis 3</p>
+            <p>Le TokenManagementSystem a pour charge la gestion de flottes de périphériques mobiles (USB et mobiles), d'y déployer des applicatifs, des données sécurisées, des politiques de sécurité ainsi que des certificats X.509</p>
+            <p>Couche de persistence utilisant Oracle JavaDB et Hibernate</p>
+            <p>Couche métier utilisant des EJB</p>
+            <p>Couche service exposée au travers d'APIs SOAP et HTTP/JSON (REST)</p>
+            <p>Console d'administration web en GWT</p>
+            <p>Client lourd en Swing avec swing-on-steroids et Guice</p>
+            <p>Architecture système et réseau assurant redondance et résilience du service</p>
+			<p>Configuration et exploitation de l'infrastructure de développement. Intégration Continue avec Hudson/Jenkins, gestion des sources avec git & gitolite, gestion des binaires avec Nexus, analyse statique de code avec Sonar, suivit de projet avec Redmine.</p>
+			<p>Automatisation de la chaine de production, du code aux images DVD du produit avec Maven, Ruby et sh.</p>
+            <p>Obfuscation en cascade de librairies Java versionnées.</p>
+            <p><strong>Security Lab</strong></p>
+            <p>Impliqué dans des projets de recherche universitaires en sécurité/cryptographie.</p>
+            <p>Participation à divers projets hardware et linux embarqué, par exemple sur des dispositifs de sécurité pour les centrales nucléaires françaises.</p>
+            <p>Conseil en architecture de sécurité pour Orange Labs sur les systèmes de reporting et facturation Livebox & SMS</p>
+            <p>Participation à des projets spécifiques pour le gouvernement français</p>
+		</div>
+	</div>
 </div>
+
+<div class="theme-item">
+	<p class="meta">
+		<span class="date">Depuis 2002</span>
+		<span class="title">Développeur de logiciels libres</span>
+	</p>  
+	<p class="text"></p>
+	<div class="geeky">
+		<div class="geeky-content">
+			<p><strong>Projets principaux</strong></p>
+			<p><a href="https://github.com/eskatos/qipki">QiPKI</a> PKI X.509 implémentée en Java avec Qi4j</p>
+			<p><a href="https://github.com/Codeartisans/swing-on-steroids">swing-on-steroids</a> Mini-framework Swing avec Supervising Presenters et Passive Views (aka. MVP), un MessageBus and optionnellement Guice ou Qi4j. Inclue une API de Wizard basé sur un graphe dynamique.</p>
+			<p><a href="https://github.com/eskatos/staticlet">staticlet</a> Servlet pour servir des fichiers en suivant HTTP/1.0 & HTTP/1.1</p>
+			<p><a href="https://github.com/eskatos/shiro-ext">shiro-ext</a> Extensions pour Apache Shiro pour gérer l'authentification X.509 avec et sans reverse proxie</p>
+			<p><a href="https://github.com/eskatos/rwallet">rwallet</a> Coffre fort logiciel en ruby concu pour être utilisé depuis des scripts shells</p>
+			<p><a href="https://github.com/Codeartisans/asadmin">asadmin</a> Librairie et plugin maven pour instrumenter l'administration d'instances de Glassfish V2</p>
+			<p><a href="https://github.com/Codeartisans/ruby-maven-plugin">ruby-maven-plugin</a> Plugin maven pour utiliser ruby dans les builds</p>
+		</div>
+	</div>
 </div>
+
 
 <div class="theme-item">
 <p class="meta">
@@ -135,8 +169,9 @@ langages, patterns d'implémentation et d'architecture, sécurité, outillage
 <p class="text">Développeur principal d'un atelier de création de plate-forme de veille multi-clients pour Montpellier Technopole.</p>
 <div class="geeky">
   <div class="geeky-content">
-    <p>Composante serveur du CMS en PHP sur plateforme LAMP offrant des services web AMF pour clients Flash.</p>
-    <p>Client riche entièrement en Flash, participation au développement d'un toolkit graphique themable type Flex.</p>
+    <p>Développement d'une interface de configuration de netfilter en PHP</p>
+	<p>Participation à plusieurs projets clients dont une plateforme d'audit de sécurité automatisée où une interface d'administration web permettait de programmer des tests de vulnérabilités.</p>
+	<p>Plate-forme de veille basée sur Zope utilisant un indexeur Autonomy.</p>
   </div>
 </div>
 </div>
@@ -164,7 +199,7 @@ langages, patterns d'implémentation et d'architecture, sécurité, outillage
 </div><!-- /dev -->
 
 
-<h1 class="theme">Sécurité</h1>
+<!-- securité --><h1 class="theme">Sécurité</h1>
 <div class="theme">
 
 <div class="theme-headline">
@@ -179,7 +214,8 @@ langages, patterns d'implémentation et d'architecture, sécurité, outillage
 <span class="title">Architecte Logiciel</span>
 <span class="company">Netheos</span>
 </p>  
-<p class="text">TODO</p>
+<p class="text">Successivement développeur principal, chef de projet puis architecte logiciel sur la ligne produit eKeynox de Netheos.</p>
+<p class="text">Participation aux projets de recherche et missions du bureau d'étude.</p>
 <div class="geeky">
   <div class="geeky-content">
     <p>TODO</p>
@@ -197,7 +233,7 @@ langages, patterns d'implémentation et d'architecture, sécurité, outillage
 <div class="geeky">
   <div class="geeky-content">
     <p><strong>Missions principales</strong></p>
-    <p>EBI Consulting - Au catalogue pour formations au développement sécurisé</p>
+    <p>EBI Consulting - Au catalogue pour plusieurs formations au développement sécurisé</p>
   </div>
 </div>
 </div>
@@ -212,7 +248,9 @@ langages, patterns d'implémentation et d'architecture, sécurité, outillage
 <p class="text">Participation à la recherche et au développement de solutions à haut niveau de sécurité ayant fait l'objet de plusieurs brevets (firewall, traceur réseau).</p>
 <div class="geeky">
   <div class="geeky-content">
-    <p>TODO</p>
+    <p>Firewall basé sur un noyau linux arreté et des composants hardware pour garantir la non corruption de la configuration.</p>
+	<p>Traceur réseau invisible utilisant des composants hardware pour garantir la non corruption des logs.</p>
+	<p>Participation à plusieurs projets clients dont une plateforme d'audit de sécurité où une interface d'administration web permettait de programmer des tests de vulnérabilités automatisés.</p>
   </div>
 </div>
 </div>
@@ -221,7 +259,7 @@ langages, patterns d'implémentation et d'architecture, sécurité, outillage
 </div><!-- /sécurité -->
 
 
-<h1 class="theme">Autres</h1>
+<!-- autres --><h1 class="theme">Autres</h1>
 <div class="theme">
 
 <div class="theme-headline"></div>
