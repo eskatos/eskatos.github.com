@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Ruby On Rails 3 Generators</title>
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript"  src="http://jquery.com/src/jquery-latest.js"></script>
+    <script type="text/javascript"  src="https://github.com/tkyk/jquery-history-plugin/raw/master/jquery.history.js"></script>
+    <script type="text/javascript"> //<![CDATA[
+      var opened = [];
+      $(document).ready(function($){
+	
+	$( "pre" ).hide();
+
+	jQuery.history.init(function(hash){
+	    if(hash == "") {
+		// initialize your app
+	    } else {
+		// restore the state from hash
+	    }
+	},
+	{ unescape: ",/" });
+
+	$( "h4"  ).toggle(
+	  function() { 
+	    $( this ).next().slideDown( "slow" );
+	    opened.push( $( this ).attr( 'id' ) );
+	  },
+	  function() { 
+	    $(this).next().slideUp( "slow" );
+	    opened.splice( opened.indexOf( $( this ).attr( 'id' ) ) , 1 )
+	  }
+	);
+
+        // Open all external links into a new window
+        $("a[href*='http://']:not([href*='" + location.hostname + "']),[href*='https://']:not([href*='" + location.hostname + "'])").attr("target","_blank");
+
+      });
+      //]]></script>
+  </head>
+  <body>
+
+    <h1>ruby on rails 3 generators</h1>
+
+    <h2>legacy generators</h2>
+
+    <h3>rails generate controller</h3>
+    <h4 id="controller-help">help</h4>
+    <pre class="help">
+Usage:
+  rails generate controller NAME [action action] [options]
+
+Options:
+  -e, [--template-engine=NAME]  # Template engine to be invoked
+                                # Default: erb
+  -t, [--test-framework=NAME]   # Test framework to be invoked
+                                # Default: test_unit
+      [--helper]                # Indicates when to generate helper
+                                # Default: true
+
+Runtime options:
+  -f, [--force]    # Overwrite files that already exist
+  -p, [--pretend]  # Run but do not make any changes
+  -q, [--quiet]    # Supress status output
+  -s, [--skip]     # Skip files that already exist
+
+Description:
+    Stubs out a new controller and its views. Pass the controller name, either
+    CamelCased or under_scored, and a list of views as arguments.
+
+    To create a controller within a module, specify the controller name as a
+    path like 'parent_module/controller_name'.
+
+    This generates a controller class in app/controllers and invokes helper,
+    template engine and test framework generators.
+
+Example:
+    `rails generate controller CreditCard open debit credit close`
+
+    Credit card controller with URLs like /credit_card/debit.
+        Controller:      app/controllers/credit_card_controller.rb
+        Functional Test: test/functional/credit_card_controller_test.rb
+        Views:           app/views/credit_card/debit.html.erb [...]
+        Helper:          app/helpers/credit_card_helper.rb
+    </pre>
+    <h4 id="controller-output">output</h4>
+    <pre class="output">
+rails generate controller my_controller first_action second_action
+
+      create  app/controllers/my_controller_controller.rb
+       route  get "my_controller/second_action"
+       route  get "my_controller/first_action"
+      invoke  erb
+      create    app/views/my_controller
+      create    app/views/my_controller/first_action.html.erb
+      create    app/views/my_controller/second_action.html.erb
+      invoke  test_unit
+      create    test/functional/my_controller_controller_test.rb
+      invoke  helper
+      create    app/helpers/my_controller_helper.rb
+      invoke    test_unit
+      create      test/unit/helpers/my_controller_helper_test.rb
+    </pre>
+
+    <h3>rails generate integration_test</h3>
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate model</h3>                
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate plugin</h3>               
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate scaffold_controller</h3>  
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate generator</h3>            
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate mailer</h3>               
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate observer</h3>             
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate resource</h3>             
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate session_migration</h3>    
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate helper</h3>               
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate migration</h3>            
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate performance_test</h3>     
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate scaffold</h3>             
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+    <h3>rails generate stylesheets</h3>  
+    <h4>help</h4>
+    <pre class="help">
+
+    </pre>
+    <h4>output</h4>
+    <pre class="command=">rails generate</pre>
+    <pre class="output">
+
+    </pre>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+
+html,body {
+  font-family : "Times New Roman", Times, serif;
+  font-size: 12px;
+  color: #000;
+  background-color: #FFF;
+}
+a { color: #000; }
+
+#outbox { width: 100%; border: none; }
+
+/*
+h1.theme {
+  border-bottom: 1px solid black;
+}
+div.theme p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+*/
+
+div.theme { border-color: lightgray; }
+div.theme-headline { border-color: lightgray; }
+div.theme-item { border-color: lightgray; }
+
+/* hide not printed content */
+div.geeky { display: none; }
+
+.pagebreak {
+  page-break-before: always;
+}
