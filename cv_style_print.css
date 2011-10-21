@@ -7,7 +7,7 @@ html,body {
 }
 a { color: #000; }
 
-#outbox { width: 100%; border: none; }
+#outbox { width: 95%; border:  none; }
 
 /*
 h1.theme {
@@ -23,6 +23,8 @@ div.theme p {
 div.theme { border-color: lightgray; }
 div.theme-headline { border-color: lightgray; }
 div.theme-item { border-color: lightgray; }
+
+div.ogeima { page-break-before: always; }
 
 /* hide not printed content */
 div.geeky { display: none; }
