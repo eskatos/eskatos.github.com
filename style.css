@@ -1,14 +1,14 @@
+
+
 body.eskatos {
   margin: 0; padding: 0;
-
-  font-family: sans;
   background-color: lightgrey;
 }
 
 #outline {
   position: absolute;
   left: 50%;
-  top: 42px;
+  top: 2.5em;
   width: 680px;
   margin-left: -340px;
 }
@@ -28,26 +28,26 @@ body.eskatos {
 
 #header {
   width:    100%;
-  height:   42px;
+  height:   2.5em;
 
   background-color: darkgreen;
-  border-bottom: 8px solid green;
+  border-bottom: 0.6em solid green;
   color: white;
 }
 
 #header img {
   float: left;
-  margin: 5px 5px 0 8px;
+  margin: 0.3em 0.3em 0 0.6em;
 }
 
 #header h1 {
   margin: 0;
-  padding-left: 16px;
-  height: 42px;
+  padding-left: 1.2em;
+  height: 2.5em;
 
   vertical-align: middle;
-  line-height: 42px;
-  font-size: 16px;
+  line-height: 2.5em;
+  font-size: 1em;
 }
 
 #header h1 span.name {
@@ -56,8 +56,8 @@ body.eskatos {
 }
 
 #places {
-  padding: 10px;
-  font-size: 12px;
+  padding: 0.9em;
+  font-size: 0.9em;
 }
 
 #places h4 {
@@ -68,9 +68,26 @@ body.eskatos {
   color: darkgreen;
 }
 
+#places div.about {
+    min-height: 4em;
+    color: black;
+    font-size: 0.9em;
+}
+#places div.about div.col {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+#places div.about div.col a {
+    text-decoration: none;
+}
+.so-flair{
+    width: 120px !important;
+}
+
 #footer {
   text-align: center;
-  font-size: 10px;
-  line-height: 20px;
+  font-size: 0.8em;
+  line-height: 2em;
   color: darkgray;
 }
