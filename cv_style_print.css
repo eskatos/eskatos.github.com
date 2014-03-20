@@ -24,7 +24,7 @@ div.theme { border-color: lightgray; }
 div.theme-headline { border-color: lightgray; }
 div.theme-item { border-color: lightgray; }
 
-div.ogeima { page-break-before: always; }
+div.freelance { page-break-before: always; }
 
 /* hide not printed content */
 div.geeky { display: none; }
