@@ -6,17 +6,19 @@
     <link href="cv_style.css" rel="stylesheet" type="text/css" />
     <link href="cv_style_screen.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="cv_style_print.css" media="print" rel="stylesheet" type="text/css" />
-    <script type="text/javascript"  src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"  src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script type="text/javascript"> //<![CDATA[
       $(document).ready(function(){
 
         // Hides geeky content and create a toggle link
         $(".geeky-content").hide();
-        $(".geeky").prepend('<div class="geeky-button">Details</div>');
-        $(".geeky-button").toggle(
-        function() { $(this).html("Cacher"); $(this).next().slideDown("slow"); },
-        function() { $(this).html("Détails"); $(this).next().slideUp("slow"); } );
-
+        if(false) {
+          var $geeky_button = $('<a class="geeky-button">Details</a>');
+          $(".geeky").prepend( $geeky_button );        
+          $(".geeky-button").click(function() {
+            $(this).next().slideToggle("slow");
+          } );
+        }
         // Open all external links into a new window
         $("a[href*='http://']:not([href*='" + location.hostname + "']),[href*='https://']:not([href*='" + location.hostname + "'])").attr("target","_blank");
 

@@ -24,7 +24,7 @@ div.theme-item { border-color: #3E79AC; }
 
 /* geeky content */
 div.geeky { text-align: right; }
-div.geeky-button {
+.geeky-button {
   text-align: right;
   color: #3E79AC;
   cursor: pointer;
