@@ -19,8 +19,8 @@ body.eskatos {
 }
 
 #topimage {
-  width:    100%
-  height:   200px;
+  width:    100%;
+  height:   260px;
 
   overflow:hidden;
   background-image: url("godzilla.png");
@@ -31,7 +31,8 @@ body.eskatos {
   height:   2.5em;
 
   background-color: darkgreen;
-  border-bottom: 0.6em solid green;
+  border-top: 0.4em solid green;
+  border-bottom: 0.4em solid green;
   color: white;
 }
 
